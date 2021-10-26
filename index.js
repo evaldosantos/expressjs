@@ -1,8 +1,6 @@
-const express = require("express");
-const consign = require("consign");
+const customExpress = require("./config/custom_express");
 
-const app = express();
-consign().include("controllers").into(app);
+const app = customExpress();
 
 app.listen(3000, () => {
   console.log("Server running on port 3000!");
