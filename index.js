@@ -1,11 +1,9 @@
 const express = require("express");
+const consign = require("consign");
 
 const app = express();
+consign().include("controllers").into(app);
 
 app.listen(3000, () => {
   console.log("Server running on port 3000!");
-});
-
-app.get("/attendances", (req, res) => {
-  res.send("You are on the attendance route!")
 });
