@@ -4,6 +4,7 @@ module.exports = app => {
   });
 
   app.post("/attendances", (req, res) => {
+    console.log(req.body);
     res.send("[POST] You are on the attendance route!")
   });
 }
