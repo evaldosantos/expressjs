@@ -13,6 +13,8 @@ class Tables {
         service varchar(20) NOT NULL,
         status varchar(20) NOT NULL,
         observations text,
+        date datetime not null, 
+        dataCriacao datetime not null
         PRIMARY KEY (id)
       )
     `
